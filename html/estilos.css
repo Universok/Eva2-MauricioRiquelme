@@ -1,6 +1,6 @@
 .flex-container {
     display: flex;
-    justify-content: right;
+    justify-content: center;
 }
 
 .flex-container {
@@ -27,20 +27,22 @@ header {
 
 nav ul {
     list-style: none;
-    padding: 0;
+    padding: 1;
     margin: 0;
 }
 
 nav li {
     display: inline;
-    margin-right: 40px;
+    margin-right: 20px;
+    /* Reducido el margen para dispositivos más pequeños */
 }
 
 /* Color de letras Menu */
 nav a {
     text-decoration: none;
-    color: #ffffff;
+    color: #e0a615;
     font-size: 16px;
+
 }
 
 nav a:hover {
@@ -48,46 +50,57 @@ nav a:hover {
 
 }
 
+.a {
+    color: #e0a615;
+    background-color: #333;
+    border-radius: 1em;
+}
+
 /* Aquí va la imagen de incio */
 .wrap {
-    width: 1690px;
-    height: 890px;
+    max-width: 100%;
+    /* Haciendo que la imagen ocupe todo el ancho */
+    height: auto;
+    /* Para mantener la relación de aspecto */
     display: flex;
     align-items: center;
     justify-content: center;
+    /* Centrando la imagen */
     background: url(https://i.ibb.co/6XXcc76/bboy.jpg);
     background-size: cover;
-    background-position: left;
+    background-position: cover;
+
 }
 
 /* Aquí colocamos las propiedades del texto sobrepuesto */
 .wrap-texto {
     color: white;
     text-align: center;
-    justify-content: right;
-    width: 20%;
-    margin: 1px;
-    padding: 1px;
-    background-position: right;
-    border-radius: 1%;
+    width: 50%;
+    /* Cambiado para que el texto sea más ancho en dispositivos pequeños */
+    margin: 10%;
+    ;
+    /* Espaciado para dispositivos pequeños */
+    padding: 10%;
+    /* Espaciado para dispositivos pequeños */
+    background-position: center;
+    /* Aumentando el radio para suavizar las esquinas */
+    background-color: rgba(0, 0, 0, 0.311);
+    /* Ajustando la opacidad del fondo */
+    border: 1px solid #ccc;
+    border-radius: 1em;
 }
 
-logo {
-    border-radius: 1%;
-}
+.logo {
+    text-align: center;
 
-/* Aqui el footer */
-.center-footer {
-    color: #f1f1f1;
-    display: flex;
-    justify-content: center;
 }
-
 
 /* Aqui empieza la config del formulario */
 form {
     color: #fff;
     margin: 0 auto;
+    max-width: 100%;
     width: 400px;
     padding: 1em;
     border: 1px solid #ccc;
@@ -109,7 +122,7 @@ label {
 input,
 textarea {
     font: 1em sans-serif;
-    width: 300px;
+    width: 100%;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     border: 1px solid #999;
@@ -126,10 +139,11 @@ textarea {
     resize: vertical;
 }
 
-.button {
-    padding-left: 90px;
-}
 
-button {
-    margin-left: 0.5em;
+
+/* Aqui el footer */
+.center-footer {
+    color: #e0a615;
+    display: flex;
+    justify-content: center;
 }

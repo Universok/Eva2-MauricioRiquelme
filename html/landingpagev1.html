@@ -8,132 +8,74 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>salacypher</title>
 
-    <!-- Aqui aparece lo que ve el Usuario -->
-    <style>
-        .flex-container {
-            display: flex;
-            justify-content: right;
-        }
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos.css">
 
-        .flex-container>div {
-            background-color: #f1f1f1;
-            list-style-type: none;
-            margin: 10px;
-            padding: 20px;
-            font-size: 30px;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #333;
-        }
-
-        .wrap {
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            align-items: end;
-            justify-content: center;
-            background: linear-gradient(to bottom, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url();
-            background-size: cover;
-            background-position: center;
-        }
-
-        .wrap-texto {
-            color: #fff;
-            text-align: center;
-            width: 50%;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav li {
-            display: inline;
-            /* Hace que los ítems del menú estén en una línea horizontal */
-            margin-right: 20px;
-            /* Espacio entre los ítems del menú */
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 16px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .center-footer {
-            margin-right: 20px;
-            color: #f1f1f1;
-            display: flex;
-            justify-content: center;
-        }
-
-        .descripcion {
-            display: inside;
-            justify-content: cover;
-        }
-
-        .div-img {
-            position: cover;
-            width: 100%;
-            height: 100%;
-            top: 50%;
-            right: 50%;
-        }
-
-        .logo {
-            position: cover;
-            width: 100%;
-            height: 100%;
-            top: 50%;
-            left: 50%;
-        }
-    </style>
 </head>
 
 <body>
     <!-- Nav -->
-    <div class="flex-container">
-        <header class="showcase">
-            <nav role="nav">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">CURSOS</a></li>
-                    <li><a href="#">TUTORIALES</a></li>
-                    <li><a href="#">TORNEOS</a></li>
-                    <li><a href="#">NOTICIAS</a></li>
-                    <button>INSCRIBETE</button>
-                </ul>
-
-            </nav>
-    </div>
-
+    <header>
+        <div class="flex-container">
+            <div style="display: inline-block; margin: 0;width: 100%;">
+                <header class="showcase">
+                    <nav role="nav">
+                        <ul>
+                            <li><a href="#"> HOME </a></li>
+                            <li><a href="#"> CURSOS </a></li>
+                            <li><a href="#"> TUTORIALES </a></li>
+                            <li><a href="#"> TORNEOS </a></li>
+                            <li><a href="#"> NOTICIAS </a></li>
+                            <li><a href="#abajo">¡Inscríbete ahora!</a></li>
+                        </ul>
+                    </nav>
+            </div>
+    </header>
+    <!--Texto Superpuesto / imagen 1 en css-->
     <div class="wrap">
         <div class="wrap-texto">
-            <h1>Texto Superpuesto</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit hic tenetur rem quasi nulla
-                quibusdam? Ducimus commodi temporibus quae placeat.</p>
+            <h1>SALA CYPHER</h1>
+            <h7>
+                <p>CENTRO DE ENTRENAMIENTO Y COMUNIDAD BBOY</p>
+            </h7>
+            <h3>
+                <p>"Como muchos saben este centro de entrenamiento comunitario no
+                    es un simple lugar, desde las experiencias de todos los que participan se construye algo
+                    significativo y
+                    en constante cambio, tratando de mantener siempre la esencia de la Cultura Hip Hop".</p>
+            </h3>
         </div>
     </div>
+
+    <div class="logo">
+        <img src="https://i.ibb.co/ZgQBBhW/logo.png" alt="logobboy" width="200" height="150">
+    </div>
+
+    <!-- Formulario -->
+    <form action="/my-handling-form-page" method="post">
+        <div>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="user_name" />
+        </div>
+        <div>
+            <label for="mail">Correo electronico</label>
+            <input type="email" id="mail" name="user_mail" />
+        </div>
+        <div>
+            <label for="msg">Mensaje</label>
+            <textarea id="msg" name="user_message"></textarea>
+        </div>
+        <div class="button">
+            <button type="submit">Envia tu mensaje</button>
+        </div>
+    </form>
+
+    <a name="abajo"></a>
 
     <footer class="center-footer">
         <p>SALA CYPHER &copy; 2024</p>
     </footer>
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
