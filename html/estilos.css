@@ -50,8 +50,8 @@ nav a:hover {
 
 }
 
-.a {
-    color: #e0a615;
+.abajo {
+    color: #e6a500;
     background-color: #333;
     border-radius: 1em;
 }
@@ -138,8 +138,6 @@ textarea {
     height: 5em;
     resize: vertical;
 }
-
-
 
 /* Aqui el footer */
 .center-footer {
